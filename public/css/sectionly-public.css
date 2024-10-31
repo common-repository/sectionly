@@ -1,0 +1,321 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.sl-main {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.sl-content {
+    width: 31%;
+    text-align: center;
+}
+
+.sl-content figure img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.sl-content-area {
+    padding: 60px 30px 30px;
+    background-color: #F0F8FF;
+}
+
+.sl-social-icon img {
+    width: 30px;
+}
+
+.sl-social-icon a {
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.sl-social-icon {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sl-content-area .sl-social-icon a {
+    width: 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    transition: 0.5s ease;
+}
+
+.sl-social-icon a:hover {
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+h2::before {
+    content: none !important;
+}
+
+.sl-name h2,
+.ls-iconbox h2,
+.cl-blog-content h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.sl-name h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sl-name h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.sl-content-area p,
+.ls-icon-content p,
+.cl-blog-content p {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.cl-blog-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.sl-blog-main img {
+    width: 100%;
+}
+
+.sl-blog-content {
+    padding: 26px;
+}
+
+.entry .entry-content p {
+    margin: 0;
+}
+
+.sl-name p {
+    padding: 0 0 20px 0;
+    display: block;
+    line-height: 25px;
+}
+
+.sl-content-area figure {
+    margin: 0;
+}
+
+
+/* 2nd section content */
+
+.ls-icon-content {
+    width: 80%;
+    margin: auto;
+}
+
+.ls-icon-content a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sl-blog-main {
+    width: 31%;
+}
+
+
+/* progress css  */
+
+.progress_single_wrapper {
+    border: 3px solid #EAEAEA;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.progress_single {
+    width: 0;
+    color: white;
+    font-family: inherit;
+    padding: 10px;
+}
+
+
+/* slider css  */
+
+.ls-slide-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.ls-slide-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.ls-slide-content p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+
+/* ................................................ swiper gallery .......................................................... */
+
+.swiper {
+    width: 80%;
+    min-width: 300px;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.gallery-thumbs .swiper-slide img:hover,
+.swiper-slide img:hover {
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    transform: translateX(-40%);
+    color: black;
+}
+
+.swiper-button-prev:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-button-next {
+    position: absolute;
+    transform: translateX(40%);
+    color: black;
+    font-weight: 900;
+}
+
+.swiper-button-next:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* ................................................ thumbs .......................................................... */
+
+.gallery-thumbs {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: auto !important;
+    filter: brightness(0.5);
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    filter: brightness(1);
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: 70px;
+    height: 70px;
+    min-height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ls-slide-content p {
+    width: 80%;
+    margin: auto !important;
+    text-align: center;
+}
+
+.ls-slide-content {
+    margin: 50px 0;
+}
+
+.gallery-thumbs .swiper-wrapper {
+    justify-content: center;
+}
+
+.sl-progress {
+    width: 100%;
+}
+
+.sl-progress-main p {
+    margin: 0;
+}
+
+
+/* ............................................. responsiveness ....................................................... */
+
+@media (max-width:1300px) {
+    sl-main {
+        gap: 20px;
+    }
+}
+
+@media (max-width:1025px) {
+    .sl-progress {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .swiper {
+        width: calc(100vw - 20px);
+    }
+    .swiper-button-next:after {
+        font-size: 20px !important;
+        transform: translateX(60%);
+    }
+    .swiper-button-prev:after {
+        font-size: 20px !important;
+        transform: translateX(-60%);
+    }
+    #swiper-button-next-modal {
+        font-size: 20px !important;
+        transform: translateX(20%);
+    }
+    #swiper-button-prev-modal {
+        font-size: 20px !important;
+        transform: translateX(-20%);
+    }
+    .swiper-slide-img {
+        width: calc(100vw-32px);
+        height: auto;
+        border: 16px solid #d8d8d8;
+        /* move next and prev buttons off img */
+        min-height: calc((0.5338 * 100vw) + 48.476px);
+    }
+    .gallery-thumbs .swiper-slide img {
+        height: 14vw;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .swiper-slide-img {
+        border: 1px solid #d8d8d8;
+    }
+}
